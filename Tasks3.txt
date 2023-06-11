@@ -1,0 +1,333 @@
+TASK#3
+Theory:
+1.What does CSS do and why use CSS?
+Ans:CSS, which stands for Cascading Style Sheets, is a style sheet language used to describe the presentation of a document written in HTML (Hypertext Markup Language). It is primarily used to define the visual appearance and formatting of web pages.
+
+The main purpose of CSS is to separate the content of a web page from its presentation. This separation allows web designers and developers to create and maintain consistent styles across multiple web pages or an entire website. By using CSS, you can define various aspects of the presentation, such as colors, fonts, layout, spacing, and more.
+
+2. Types of CSS- Inline, Internal and External
+Ans: These types differ in terms of how and where the CSS code is written and applied.
+
+Inline CSS:
+Inline CSS involves applying styles directly to individual HTML elements using the "style" attribute. This attribute is added within the HTML tag and contains CSS declarations.
+
+Internal CSS:
+Internal CSS, also known as embedded CSS, is written within the <style> tags in the head section of an HTML document. The CSS code applies to the HTML elements within the same file.
+
+External CSS:
+External CSS involves writing CSS code in a separate file with a .css extension and linking it to HTML documents using the <link> tag. This allows you to apply the same styles to multiple HTML files. 
+
+3.Different types of Selector:
+Ans:    Type Selector:
+    The type selector targets elements based on their HTML tag name. It selects all instances of a specific element type. For example, to select all paragraphs, you would use the "p" selector:
+
+css
+
+p {
+  color: blue;
+}
+
+    Class Selector:
+    The class selector selects elements based on the value of their "class" attribute. It is denoted by a period (.) followed by the class name. Multiple elements can share the same class. For example:
+
+HTML:
+
+html
+
+<p class="highlight">This is a highlighted paragraph.</p>
+
+CSS:
+
+css
+
+.highlight {
+  color: red;
+}
+
+    ID Selector:
+    The ID selector targets a specific element based on its "id" attribute value. It is denoted by a hash (#) followed by the ID name. IDs must be unique within an HTML document. For example:
+
+HTML:
+
+html
+
+<p id="main-paragraph">This is the main paragraph.</p>
+
+CSS:
+
+css
+
+#main-paragraph {
+  font-size: 18px;
+}
+
+    Attribute Selector:
+    The attribute selector targets elements based on the presence or value of an attribute. It is denoted using square brackets ([]). For example, to select all elements with a "target" attribute, you would use:
+
+css
+
+[target] {
+  text-decoration: underline;
+}
+
+You can also target elements with specific attribute values. For example:
+
+css
+
+[href="https://example.com"] {
+  color: green;
+}
+
+    Descendant Selector:
+    The descendant selector targets elements that are descendants of another element. It is denoted by a space between two selectors. For example, to select all <span> elements inside a <div> element:
+
+css
+
+div span {
+  font-weight: bold;
+}
+
+    Child Selector:
+    The child selector targets elements that are direct children of another element. It is denoted by a greater than sign (>). For example, to select all <li> elements that are direct children of a <ul> element:
+
+css
+
+ul > li {
+  color: purple;
+}
+
+4.Discussed about CSS Fonts- how to add google fonts
+Ans:Browse Google Fonts:
+Visit the Google Fonts website (fonts.google.com) to explore the available font options. You can search for specific fonts or browse through categories and collections. Once you find a font you like, click on it to view more details.
+
+Select Fonts:
+On the font's detail page, you'll find an "Embed" tab. In this tab, you can select the font weights and styles you want to include on your web page. Click the checkboxes to choose the desired variations.
+
+Get the Embed Code:
+After selecting your preferred font options, scroll down to the bottom of the "Embed" tab. You'll find the embed code that needs to be added to your HTML document.
+ 
+Add the Embed Code:
+Copy the embed code and paste it into the <head> section of your HTML document. Replace "FontName" with the actual name of the font you selected. 
+
+Apply the Font:
+Once you have added the Google Fonts CSS link, you can use the font in your CSS styles. In the example above, the font-family property is set to "Roboto" for the body element, making it use the selected font.
+
+5.Read about important CSS Font attribute -
+1. CSS Font Color
+2. CSS Font Family
+3. CSS Font Size
+4. CSS Font Style
+5. CSS Font Weight
+
+    CSS Font Color:
+    The color property in CSS is used to specify the color of text. You can define colors using various formats, including named colors (e.g., "red", "blue"), hexadecimal values (e.g., "#ff0000" for red), RGB values (e.g., "rgb(255, 0, 0)"), and HSL values (e.g., "hsl(0, 100%, 50%)" for red). For example:
+
+css
+
+p {
+  color: blue;
+}
+
+    CSS Font Family:
+    The font-family property is used to define the preferred font for an element. You can specify multiple font names separated by commas, indicating fallback options if the preferred font is not available. Common font families include serif, sans-serif, monospace, cursive, and fantasy. For example:
+
+css
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+    CSS Font Size:
+    The font-size property is used to set the size of text. You can specify the size using various units such as pixels (px), points (pt), ems (em), or percentages (%). For example:
+
+css
+
+h1 {
+  font-size: 24px;
+}
+
+    CSS Font Style:
+    The font-style property is used to specify the style of text, such as normal, italic, or oblique. Italic and oblique styles are often used to emphasize or differentiate text. For example:
+
+css
+
+em {
+  font-style: italic;
+}
+
+    CSS Font Weight:
+    The font-weight property is used to control the thickness or boldness of text. Common values include normal, bold, and numeric values ranging from 100 to 900 (in multiples of 100), where higher values represent bolder text. For example:
+
+css
+
+strong {
+  font-weight: bold;
+}
+
+6.CSS Background:
+1. background-color
+2. background-image
+3. background-repeat
+4. background-attachment
+5. background-position
+6. shorthand notation for background
+
+    background-color:
+    The background-color property is used to set the background color of an element. You can specify colors using various formats, such as named colors, hexadecimal values, RGB values, or HSL values. For example:
+
+css
+
+body {
+  background-color: #f2f2f2;
+}
+
+    background-image:
+    The background-image property is used to set an image as the background of an element. You can provide the path to the image file using the url() function. For example:
+
+css
+
+div {
+  background-image: url("image.jpg");
+}
+
+    background-repeat:
+    The background-repeat property controls how the background image is repeated both horizontally and vertically. Common values include repeat (default), no-repeat, repeat-x, and repeat-y. For example:
+
+css
+
+div {
+  background-repeat: no-repeat;
+}
+
+    background-attachment:
+    The background-attachment property determines whether the background image scrolls with the content or remains fixed as the user scrolls the page. Values can be scroll (default) or fixed. For example:
+
+css
+
+div {
+  background-attachment: fixed;
+}
+
+    background-position:
+    The background-position property sets the starting position of the background image. You can specify positions using keywords (top, bottom, left, right) or by using specific measurements (pixels, percentages). For example:
+
+css
+
+div {
+  background-position: top center;
+}
+
+    Shorthand notation for background:
+    CSS provides a shorthand notation, background, that combines multiple background properties into a single declaration. It allows you to specify the background color, image, repeat, attachment, and position in one line. For example:
+
+css
+
+div {
+  background: #f2f2f2 url("image.jpg") no-repeat fixed top center;
+}
+
+7.CSS Border
+  1. border-size
+2. border-style
+3. border-radius
+4. Shorthand notation for border
+
+    border-size:
+    The border-width property is used to set the width or thickness of a border. You can specify different widths for each side of an element using the border-top-width, border-right-width, border-bottom-width, and border-left-width properties, or you can use the shorthand border-width property to set them all at once. For example:
+
+css
+
+div {
+  border-width: 2px;
+}
+
+    border-style:
+    The border-style property is used to define the style of a border. Common values include solid, dotted, dashed, double, groove, ridge, inset, and outset. You can set different styles for each side of an element using border-top-style, border-right-style, border-bottom-style, and border-left-style, or you can use the shorthand border-style property to set them all at once. For example:
+
+css
+
+div {
+  border-style: dashed;
+}
+
+    border-radius:
+    The border-radius property is used to create rounded corners on an element's border. It defines the radius of the curve for each corner. You can use border-radius to set the same radius for all corners or use border-top-left-radius, border-top-right-radius, border-bottom-right-radius, and border-bottom-left-radius to set different radii for each corner. For example:
+
+css
+
+div {
+  border-radius: 10px;
+}
+
+    Shorthand notation for border:
+    CSS provides a shorthand notation, border, that combines multiple border properties into a single declaration. It allows you to specify the border width, style, and color in one line. For example:
+
+css
+
+div {
+  border: 1px solid #000000;
+}
+
+8.Read about CSS Colors - Different ways to specify
+colors
+1. Color Name
+2. RGB
+3. Hex
+
+    Color Name:
+    CSS provides a set of predefined color names that you can use directly. For example, you can specify colors like red, blue, green, yellow, and so on. Here's an example:
+
+css
+
+h1 {
+  color: red;
+}
+
+    RGB:
+    RGB (Red, Green, Blue) is a color model that represents colors by specifying the amount of red, green, and blue light required to create them. In CSS, you can specify colors using the RGB format, where you provide the values for red, green, and blue within the range of 0 to 255. For example:
+
+css
+
+p {
+  color: rgb(255, 0, 0); /* Red */
+}
+
+    Hexadecimal (Hex):
+    Hexadecimal colors use a six-digit code preceded by a hash (#) symbol. Each pair of digits represents the intensity of red, green, and blue, respectively, ranging from 00 to FF (equivalent to 0-255 in decimal). For example:
+
+css
+
+span {
+  color: #0000FF; /* Blue */
+}
+
+We can also use three-digit hexadecimal codes where each digit represents the intensity of red, green, and blue, respectively, in a shortened format. For example:
+
+css
+
+div {
+  color: #F00; /* Red */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
